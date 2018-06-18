@@ -1,3 +1,13 @@
+/**
+ * 
+ */
+package vehicle;
+
+/**
+ * @author gayeb
+ *
+ */
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
@@ -33,6 +43,14 @@ class VehicleCounterTest {
     ArrayList expected = mkOutput( output );
     VehicleCounter vc = new VehicleCounter();
     ArrayList al = vc.computeTraffic( mkTest( input ) );
+    System.out.println("Actual");
+    for (Object v : al) {
+		System.out.println(v);
+	}
+    System.out.println("Expected");
+    for (Object v :  mkOutput( output )) {
+		System.out.println(v);
+	}
     return al != null && al.equals( mkOutput( output ) );
   }
 
