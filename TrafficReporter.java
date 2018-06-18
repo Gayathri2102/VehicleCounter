@@ -1,6 +1,15 @@
+/**
+ * 
+ */
+package vehicle;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * @author gayeb
+ *
+ */
 public interface TrafficReporter {
   public static int MIN_WHEELBASE = 186; // centimeters
 
